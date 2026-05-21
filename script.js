@@ -124,3 +124,8 @@ if (window.location.pathname.includes("message.html")) {
 
   typeLine();
 }
+function goToMemories() {
+
+  window.location.href = "memories.html";
+
+}
