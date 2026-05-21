@@ -103,6 +103,7 @@ button:hover {
 }
 
 .message-box {
+
   width: 320px;
   height: 570px;
 
@@ -110,7 +111,9 @@ button:hover {
 
   padding: 20px;
 
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(12px);
 
   border-radius: 25px;
 
@@ -121,10 +124,8 @@ button:hover {
   font-size: 20px;
 
   line-height: 1.8;
-  
-  background: transparent;
-  
-  box-shadow: none;
+
+  color: white;
 
   box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
@@ -179,5 +180,29 @@ button:hover {
   100% {
     transform: translateY(-110vh) rotate(45deg);
     opacity: 0;
+  }
+}
+.message-box p {
+
+  animation: fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(15px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
   }
 }
