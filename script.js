@@ -45,6 +45,10 @@ if (window.location.pathname.includes("countdown.html")) {
     countdownBox.innerText = count;
 
     if (count === 0) {
+      confetti({
+      particleCount: 250,
+      spread: 120
+    });
 
       clearInterval(timer);
 
