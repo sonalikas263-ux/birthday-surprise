@@ -11,14 +11,12 @@ body {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 25px;
-  border-radius: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 25px;
   text-align: center;
-  width: 85%;
-  max-width: 400px;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-  z-index: 2;
+  width: 90%;
+  max-width: 350px;
 }
 
 input {
@@ -64,8 +62,12 @@ button:hover {
 
 .video-box {
   width: 100%;
-  border-radius: 15px;
+  max-width: 320px;
+  height: 570px;   /* portrait reel size */
+  object-fit: cover;
+  border-radius: 20px;
   margin-top: 15px;
+  background: black;
 }
 
 .message-box {
