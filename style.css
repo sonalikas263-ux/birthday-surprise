@@ -1,20 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+
   font-family: Arial, sans-serif;
 
-  background: linear-gradient(to bottom, #000000, #1a001a);
+  background: linear-gradient(to bottom, #ffb6c1, #ffc0cb);
 
   overflow: hidden;
+
   height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .container {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.35);
 
   backdrop-filter: blur(15px);
 
@@ -27,7 +28,7 @@ body {
   width: 90%;
   max-width: 350px;
 
-  box-shadow: 0 0 25px rgba(255,255,255,0.1);
+  box-shadow: 0 0 25px rgba(255,105,180,0.3);
 
   z-index: 2;
 }
