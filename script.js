@@ -24,11 +24,10 @@ function login() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  // Change credentials here
-  if (username.toLowerCase() === "friend" && password === "1234") {
+  if (username == "friend" && password == "1234") {
     window.location.href = "countdown.html";
   } else {
-    alert("Wrong Details 😅 Try again!");
+    alert("Wrong username or password 😅");
   }
 }
 
