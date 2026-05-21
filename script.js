@@ -1,4 +1,4 @@
-// HEARTS GENERATOR (ALL PAGES)
+// HEARTS
 function createHearts() {
   const heartsContainer = document.querySelector(".hearts");
 
@@ -6,8 +6,6 @@ function createHearts() {
     const heart = document.createElement("span");
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-    heart.style.opacity = Math.random();
-    heart.style.width = heart.style.height = (Math.random() * 15 + 10) + "px";
 
     heartsContainer.appendChild(heart);
 
@@ -16,69 +14,63 @@ function createHearts() {
     }, 6000);
   }, 300);
 }
+
 createHearts();
 
 
-// LOGIN PAGE FUNCTION
+// LOGIN FUNCTION
 function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value.trim();
 
-  if (username == "friend" && password == "1234") {
+  if (username === "friend" && password === "1234") {
     window.location.href = "countdown.html";
   } else {
-    alert("Wrong username or password 😅");
+    alert("Wrong Username or Password 😅");
   }
 }
 
 
-// COUNTDOWN PAGE FUNCTION
+// COUNTDOWN
 if (window.location.pathname.includes("countdown.html")) {
+
   let count = 10;
+
   const countdownBox = document.getElementById("countdown");
   const birthdayBox = document.getElementById("birthdayBox");
   const surpriseBtn = document.getElementById("surpriseBtn");
 
   const timer = setInterval(() => {
+
     count--;
+
     countdownBox.innerText = count;
 
     if (count === 0) {
+
       clearInterval(timer);
+
       countdownBox.classList.add("hidden");
       birthdayBox.classList.remove("hidden");
       surpriseBtn.classList.remove("hidden");
     }
+
   }, 1000);
 }
+
 
 function goToVideo() {
   window.location.href = "video.html";
 }
 
 
-// VIDEO PAGE FUNCTION
-if (window.location.pathname.includes("video.html")) {
-  const video = document.getElementById("bdayVideo");
-  const btn = document.getElementById("seeMoreBtn");
-
-  video.onended = () => {
-    btn.classList.remove("hidden");
-  };
-}
-
-function goToMessage() {
-  window.location.href = "message.html";
-}
-
-
-// MESSAGE PAGE FUNCTION
+// MESSAGE PAGE
 if (window.location.pathname.includes("message.html")) {
+
   const messageBox = document.getElementById("messageBox");
 
-  // EDIT YOUR MESSAGE HERE (line by line)
   const lines = [
-    Happy Birthday to the man who stole my heart ❤️
+      Happy Birthday to the man who stole my heart ❤️
 On your special day, I just want to promise you that I’ll love you more with every passing year. We have seen so many ups and downs
 together, but no matter what happened, you never left my side. You stayed with me in every situation, supported me, understood me, 
 and loved me even when things were difficult. And honestly, I feel so lucky to have someone like you in my life.💖
@@ -90,19 +82,21 @@ success in this world because you truly deserve it. ✨No matter what happens, I
 
 Once again,
 Happy Birthday Khhadush💖
-
   ];
 
   let lineIndex = 0;
 
   function typeLine() {
-    if (lineIndex < lines.length) {
-      let line = document.createElement("p");
-      line.innerText = lines[lineIndex];
-      messageBox.appendChild(line);
-      lineIndex++;
 
-      messageBox.scrollTop = messageBox.scrollHeight;
+    if (lineIndex < lines.length) {
+
+      let line = document.createElement("p");
+
+      line.innerText = lines[lineIndex];
+
+      messageBox.appendChild(line);
+
+      lineIndex++;
 
       setTimeout(typeLine, 1200);
     }
