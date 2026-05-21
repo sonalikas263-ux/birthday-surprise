@@ -25,7 +25,7 @@ function login() {
   const password = document.getElementById("password").value;
 
   // Change credentials here
-  if (username.toLowerCase() === "gagan" && password === "22") {
+  if (username.toLowerCase() === "friend" && password === "1234") {
     window.location.href = "countdown.html";
   } else {
     alert("Wrong Details 😅 Try again!");
