@@ -1,7 +1,7 @@
 function createHearts() {
   const heartsContainer = document.querySelector(".hearts");
 
-  setInterval(() => {
+  setInterval(() => { 
     const heart = document.createElement("span");
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
