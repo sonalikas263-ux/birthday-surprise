@@ -19,15 +19,14 @@ createHearts();
 function login() {
 
   const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value.trim();
 
-  if (username === "friend" && password === "1234") {
+  if (username.toLowerCase() === "gagan") {
 
     window.location.href = "countdown.html";
 
   } else {
 
-    alert("Wrong Username or Password 😅");
+    alert("Enter Correct Name ❤️");
   }
 }
 
