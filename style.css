@@ -10,13 +10,15 @@ body {
   align-items: center;
 }
 
-.container {
-  background: rgba(255,255,255,0.9);
-  padding: 20px;
+.reel-container {
+  width: 320px;
+  height: 570px;
+  margin: auto;
   border-radius: 25px;
-  text-align: center;
-  width: 90%;
-  max-width: 350px;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  position: relative;
 }
 
 input {
@@ -60,14 +62,11 @@ button:hover {
   color: #ff0055;
 }
 
-.video-box {
+.reel-video {
   width: 100%;
-  max-width: 320px;
-  height: 570px;   /* portrait reel size */
+  height: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  margin-top: 15px;
-  background: black;
+  display: block;
 }
 
 .message-box {
