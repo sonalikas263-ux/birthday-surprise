@@ -69,19 +69,36 @@ if (window.location.pathname.includes("message.html")) {
   const messageBox = document.getElementById("messageBox");
 
   const lines = [
-    Happy Birthday to the man who stole my heart ❤️
-On your special day, I just want to promise you that I’ll love you more with every passing year. We have seen so many ups and downs
-together, but no matter what happened, you never left my side. You stayed with me in every situation, supported me, understood me, 
-and loved me even when things were difficult. And honestly, I feel so lucky to have someone like you in my life.💖
-Yes, we fight a lot, we argue, we get angry at each other… but what is love without a little madness and fights? At the end of the day
-those little arguments only make our bond stronger because my love for you is always bigger than my anger. You know I fight a lot but I love you even more than that. ❤️
-Thank you for always being there for me, for making me smile, for caring for me, and for becoming such an important part of my life. 
-On your special day, I pray to God that all your dreams come true, you always stay healthy, successful, happy, and blessed. May you get all the happiness, love, and
-success in this world because you truly deserve it. ✨No matter what happens, I just want you to know that you are very special to me and you will always have a special place in my heart. ❤️
+  "Happy Birthday to the man who stole my heart ❤️",
 
-Once again,
-Happy Birthday Khhadush💖
-  ];
+  "On your special day, I just want to promise you that I’ll love you more with every passing year.",
+
+  "We have seen so many ups and downs together, but no matter what happened, you never left my side.",
+
+  "You stayed with me in every situation, supported me, understood me, and loved me even when things were difficult.",
+
+  "And honestly, I feel so lucky to have someone like you in my life 💖",
+
+  "Yes, we fight a lot, we argue, we get angry at each other…",
+
+  "But what is love without a little madness and fights? ❤️",
+
+  "At the end of the day those little arguments only make our bond stronger because my love for you is always bigger than my anger.",
+
+  "You know I fight a lot but I love you even more than that ❤️",
+
+  "Thank you for always being there for me, for making me smile, for caring for me, and for becoming such an important part of my life.",
+
+  "On your special day, I pray to God that all your dreams come true.",
+
+  "May you always stay healthy, successful, happy, and blessed ✨",
+
+  "May you get all the happiness, love, and success in this world because you truly deserve it 💖",
+
+  "No matter what happens, you will always have a special place in my heart ❤️",
+
+  "Once again, Happy Birthday Khhadush 💖"
+];
 
   let lineIndex = 0;
 
