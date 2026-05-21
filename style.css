@@ -70,14 +70,28 @@ button:hover {
 }
 
 .message-box {
+  width: 320px;
+  height: 570px;
+  margin: auto;
+
   font-size: 20px;
   text-align: left;
-  padding: 15px;
-  background: #fff;
-  border-radius: 15px;
-  height: 300px;
+
+  padding: 20px;
+
+  background: rgba(255,255,255,0.95);
+
+  border-radius: 25px;
+
   overflow-y: auto;
-  width: 100%;
+
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+
+  color: #ff0055;
+
+  line-height: 1.8;
+  background: transparent;
+  box-shadow: none;
 }
 
 .hidden {
